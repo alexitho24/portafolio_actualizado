@@ -1,0 +1,70 @@
+/* Reset y fuente base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+/* Cuerpo */
+body {
+  background-color: #0f172a; /* azul-gris oscuro */
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* Imagen con hover */
+img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+/* Formulario e inputs con borde */
+input,
+textarea {
+  background-color: #1f2937;
+  border: 2px solid #334155; /* borde gris azulado */
+  color: #e2e8f0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #facc15; /* amarillo elegante */
+  box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.2);
+}
+
+/* Botón */
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* Tarjetas y secciones con borde */
+.card, .section-box {
+  border: 2px solid #475569; /* gris azulado fuerte */
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #1e293b;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Footer */
+footer {
+  background-color: #0a0f1c;
+  color: #facc15;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #334155;
+}
+
+/* Responsive */
+@media(max-width: 640px) {
+  main, section {
+    padding: 16px;
+  }
+}
